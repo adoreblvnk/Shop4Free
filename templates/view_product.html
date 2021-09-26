@@ -1,0 +1,50 @@
+{% extends 'layout.html' %} {% block body %}
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 my-4">
+      <div class="list-group">
+        <a href="/fruit" class="list-group-item">Fruits</a>
+        <a href="/vegetable" class="list-group-item">Vegetables</a>
+        <a href="/meat" class="list-group-item">Meats</a>
+      </div>
+    </div>
+    <!-- /.col-lg-3 -->
+    <div class="col-lg-9">
+      <div class="row">
+        {% for product in fruits %}
+        <div class="col-lg-6">
+          <div class="card mt-4">
+            <img
+              class="card-img-top img-fluid"
+              src="static/image/product/{{product.category}}/{{product.picture}}"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- /.card -->
+        <div class="col-lg-6">
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">Product Details</div>
+            <div class="card-body">
+              <h3 class="card-title">{{ product.pName}}</h3>
+              <h4>${{ product.price}}</h4>
+              <p class="card-text">{{ product.description}}</p>
+              <a
+                href="/{{product.category}}?order={{product.id}}"
+                class="btn btn-success"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- /.card -->
+      </div>
+    </div>
+    <!-- /.col-lg-9 -->
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends 'layout.html' %} {% block body %}
+<script language="JavaScript">
+  function showInput() {
+    document.getElementById("totalAmount").innerHTML =
+      Number(document.getElementById("productPrice").innerText) *
+      Number(document.getElementById("quantity").value);
+  }
+</script>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 my-4">
+      <div class="list-group">
+        <a href="/fruit" class="list-group-item">Fruits</a>
+        <a href="/vegetable" class="list-group-item">Vegetables</a>
+        <a href="/meat" class="list-group-item">Meats</a>
+      </div>
+    </div>
+    <!-- /.col-lg-3 -->
+    <div class="col-lg-9">
+      <div class="row">
+        {% for product in fruits %}
+        <div class="col-lg-6">
+          <div class="card mt-4">
+            <img
+              class="card-img-top img-fluid"
+              src="static/image/product/{{product.category}}/{{product.picture}}"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- /.card -->
+        <div class="col-lg-6">
+          <div class="card card-outline-secondary my-4">
+            <div class="card-body">
+              <div class="card-header">Order Details</div>
+              {% if session.ordered %}
+              <p class="card-text">you'll be proceeding to Stripe checkout.</p>
+              <a href="#" id="buy_now_btn" class="btn btn-primary">Confirm Order</a>
+              <script src="https://js.stripe.com/v3/"></script>
+              <script src="{{ url_for('static', filename='script-ajax.js') }}"></script>
+
+              {% elif session.logged_in %} {% from "includes/_formhelpers.html"
+              import render_field %}
+              <form
+                method="POST"
+                action="/{{product.category}}?order={{product.id}}"
+              >
+                <input
+                  type="hidden"
+                  name="csrf_token"
+                  value="{{ csrf_token() }}"
+                />
+
+                <div class="form-group">
+                  {{render_field(form.quantity, class_="form-control")}}
+                </div>
+
+                <div class="form-group">
+                  {{render_field(form.order_place, class_="form-control")}}
+                </div>
+                <div class="form-group">
+                  <h4>Total Amount</h4>
+                  <p hidden id="productPrice">{{product.price}}</p>
+                  <h5 class="card-text">$<span id="totalAmount"></span></h5>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-success btn-sm"
+                  onclick="showInput();"
+                >
+                  Calculate Total Amount
+                </button>
+                <br />
+                <br />
+                {{form.recaptcha()}}
+                <br />
+                <button type="submit" class="btn btn-primary">
+                  Submit Order
+                </button>
+              </form>
+              {% else %}
+              <p class="card-text">Please login.</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- /.card -->
+      </div>
+      <!--  
+            {% if x == '' %}
+            <h2 class="mb-4">No recommendation found</h2>
+            {% else%}
+            <h2 class="mb-4">Recommended for you:</h2>
+            <div class="row">
+                {% for product in x %}
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mb-4">
+                        <a href="/{{product.category}}?view={{product.id}}">
+                            <div class="card-img-top id_{{product.id}}"
+                                 style="background: url('static/image/product/{{product.category}}/{{product.picture}}'); background-repeat:no-repeat; background-size: cover; height:200px;width:100% "></div>
+                        </a>
+                        <div class="card-body">
+                            <h5><a class="card-title" href="/{{product.category}}?view={{product.id}}">{{
+                                product.pName}}</a></h5>
+                            <h4>${{product.price}}</h4>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            -->
+    </div>
+    <!-- /.col-lg-9 -->
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+{% endblock %}

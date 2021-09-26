@@ -1,0 +1,191 @@
+{
+  "user_signup": [
+    {
+      "name": "test3",
+      "email": "test3@gmail.com",
+      "username": "test3",
+      "mobile": "+6588695643",
+      "dt_string": "17/08/2021 14:31:16",
+      "flagged_input": 0
+    },
+    {
+      "name": "test1",
+      "email": "test1@email.com",
+      "username": "test1",
+      "mobile": "+6588695643",
+      "dt_string": "17/08/2021 20:50:28",
+      "flagged_input": 0
+    }
+  ],
+  "user_login": [
+    {
+      "username": "test2",
+      "dt_string": "13/08/2021 17:11:27",
+      "flagged_input": 0
+    },
+    {
+      "username": "test",
+      "dt_string": "16/08/2021 16:57:49",
+      "flagged_input": 0
+    },
+    {
+      "username": "test2",
+      "dt_string": "16/08/2021 23:08:15",
+      "flagged_input": 0
+    },
+    {
+      "username": "test",
+      "dt_string": "17/08/2021 14:33:56",
+      "flagged_input": 0
+    },
+    {
+      "username": "test",
+      "dt_string": "17/08/2021 14:34:00",
+      "flagged_input": 0
+    },
+    {
+      "username": "test",
+      "dt_string": "17/08/2021 14:34:04",
+      "flagged_input": 0
+    },
+    {
+      "username": "test3",
+      "dt_string": "17/08/2021 14:34:54",
+      "flagged_input": 0
+    },
+    {
+      "username": "test3",
+      "dt_string": "17/08/2021 14:35:22",
+      "flagged_input": 0
+    },
+    {
+      "username": "dsaf",
+      "dt_string": "17/08/2021 16:17:14",
+      "flagged_input": 0
+    },
+    {
+      "username": "dsaf",
+      "dt_string": "17/08/2021 16:17:17",
+      "flagged_input": 0
+    },
+    {
+      "username": "dsaf",
+      "dt_string": "17/08/2021 16:17:19",
+      "flagged_input": 0
+    },
+    {
+      "username": "test3",
+      "dt_string": "17/08/2021 17:10:43",
+      "flagged_input": 0
+    },
+    {
+      "username": "test3",
+      "dt_string": "17/08/2021 17:33:56",
+      "flagged_input": 0
+    },
+    {
+      "username": "test3",
+      "dt_string": "17/08/2021 18:10:30",
+      "flagged_input": 0
+    },
+    {
+      "username": "random",
+      "dt_string": "17/08/2021 20:07:19",
+      "flagged_input": 0
+    },
+    {
+      "username": "fail",
+      "dt_string": "17/08/2021 20:53:12",
+      "flagged_input": 0
+    },
+    {
+      "username": "fail",
+      "dt_string": "17/08/2021 20:53:23",
+      "flagged_input": 0
+    },
+    {
+      "username": "test1",
+      "dt_string": "17/08/2021 20:54:03",
+      "flagged_input": 0
+    },
+    {
+      "username": "test1",
+      "dt_string": "17/08/2021 20:54:24",
+      "flagged_input": 0
+    },
+    {
+      "username": "test1",
+      "dt_string": "17/08/2021 21:24:53",
+      "flagged_input": 0
+    },
+    {
+      "username": "test1",
+      "dt_string": "17/08/2021 21:25:09",
+      "flagged_input": 0
+    },
+    {
+      "username": "fail",
+      "dt_string": "17/08/2021 21:25:54",
+      "flagged_input": 0
+    },
+    {
+      "username": "fail",
+      "dt_string": "17/08/2021 21:25:57",
+      "flagged_input": 0
+    },
+    {
+      "username": "fail",
+      "dt_string": "17/08/2021 21:26:00",
+      "flagged_input": 0
+    }
+  ],
+  "admin_login": [
+    {
+      "email": "\" or 1=1",
+      "dt_string": "14/08/2021 17:55:33",
+      "flagged_input": 1
+    },
+    {
+      "email": "test@gmail.com",
+      "dt_string": "17/08/2021 14:41:11",
+      "flagged_input": 0
+    },
+    {
+      "email": "test@gmail.com",
+      "dt_string": "17/08/2021 19:26:37",
+      "flagged_input": 0
+    },
+    {
+      "email": "test@gmail.com",
+      "dt_string": "17/08/2021 21:00:53",
+      "flagged_input": 0
+    }
+  ],
+  "search": [
+    {
+      "query": "asdfsad",
+      "dt_string": "16/08/2021 17:07:41",
+      "flagged_input": 0
+    },
+    {
+      "query": "\" 1=1 --",
+      "dt_string": "17/08/2021 14:27:55",
+      "flagged_input": 1
+    },
+    {
+      "query": "\" or 1=1 --",
+      "dt_string": "17/08/2021 15:20:40",
+      "flagged_input": 1
+    },
+    {
+      "query": "s",
+      "dt_string": "17/08/2021 15:49:35",
+      "flagged_input": 0
+    },
+    {
+      "query": "s",
+      "dt_string": "17/08/2021 20:37:43",
+      "flagged_input": 0
+    }
+  ]
+}

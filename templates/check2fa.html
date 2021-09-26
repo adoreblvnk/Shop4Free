@@ -1,0 +1,26 @@
+{% extends 'layout.html' %} {% block body %} {% include
+'includes/_flashmsg.html' %}
+<div class="jumbotron">
+  <h2 style="text-align: center; color: #696969">2FA Form</h2>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <div class="card">
+    <div class="card-block">
+      <div class="lead">
+        <i class="fa fa-info-circle"></i>
+      </div>
+    </div>
+    <form method="POST" action="">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+      <div class="card-block">
+        <div class="form-group">
+          {{render_field(form.code2fa, class_="form-control")}}
+        </div>
+
+        <div class="col col-8">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
