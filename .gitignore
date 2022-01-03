@@ -1,0 +1,12 @@
+# credentials
+.env
+rootCA.key
+rootCA.pem
+
+# venv
+venv/
+.vscode/
+
+# others
+IT2555 APSJ Final Presentation.pptx
+assets/
