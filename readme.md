@@ -2,7 +2,7 @@
 
 ![Shop4Free banner](https://i.imgur.com/m4aPjeK.png)
 
-an applications security project.
+an applications security project focused on tackling common vulnerabilities present in e-commerce sites. 
 
 prod by joseph, aden, hao yu, jayden.
 
