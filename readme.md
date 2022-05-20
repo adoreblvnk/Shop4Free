@@ -2,11 +2,11 @@
 
 ![Shop4Free banner](https://i.imgur.com/m4aPjeK.png)
 
-an applications security project focused on tackling common vulnerabilities present in e-commerce sites. 
+An applications security project focused on tackling common vulnerabilities present in e-commerce sites. 
 
-prod by joseph, aden, hao yu, jayden.
+Prod by Joseph, Aden, Hao Yu, Jayden.
 
-mastered by joseph.
+Mastered by blvnk.
 
 ## About
 
@@ -16,25 +16,25 @@ mastered by joseph.
 
 [![failed login attempts](https://i.imgur.com/wpfDPTw.png)](https://streamable.com/xrhlvq)
 
-custom error page after 3 failed logins.
+Custom error page after 3 failed logins.
 
 #### 2FA
 
 [![2FA](https://i.imgur.com/eQ7wVGo.png)](https://streamable.com/antb1q)
 
-built with Twilio.
+Built with Twilio.
 
 #### Payment
 
 [![payment](https://i.imgur.com/M4VpAPl.png)](https://streamable.com/tzq63z)
 
-built with Stripe.
+Built with Stripe.
 
 #### Admin Logging
 
 [![admin](https://i.imgur.com/nxg8hgN.png)](https://streamable.com/3kc075)
 
-detecting attempted SQL injections, and highlighting them in red.
+Detecting attempted SQL injections, and highlighting them in red.
 
 ### Built With
 
@@ -53,7 +53,7 @@ detecting attempted SQL injections, and highlighting them in red.
 
 #### SSL
 
-- the PEM password for running Shop4Free is `rnndmm`.
+- The PEM password for running Shop4Free is `rnndmm`.
 
 #### reCaptcha
 
@@ -81,7 +81,8 @@ Steps to Generate Endpoint Secret in Stripe:
 
 ## Credits
 
-- joseph
-- aden
-- hao yu
-- jayden
+- Joseph
+- Aden
+- Hao Yu
+- Jayden
+- blvnk
