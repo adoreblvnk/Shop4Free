@@ -1,47 +1,51 @@
-# Shop4Free
+<div align="center">
+    <img src="./static/image/S4FLogo.png" width=100> <!-- Logo -->
+    <h1>Shop4Free</h1> <!-- Title -->
+    <p>
+      An applications security project focused on tackling common vulnerabilities present in e-commerce sites.
+    </p> <!-- Description -->
+    <p>
+      Built With: Flask • Wamp64 • Twilio • Stripe
+    </p> <!-- Built With -->
+</div>
 
-![Shop4Free banner](https://i.imgur.com/m4aPjeK.png)
+---
 
-An applications security project focused on tackling common vulnerabilities present in e-commerce sites. 
+<details>
+<summary>Table of Contents</summary>
 
-Prod by Joseph, Aden, Hao Yu, Jayden.
+- [Demo](#demo)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Execution](#execution)
+</details>
 
-Mastered by blvnk.
+## Demo
 
-## About
-
-### Features
-
-#### Failed Login Attempts
+**Failed Login Attempts**
 
 [![failed login attempts](https://i.imgur.com/wpfDPTw.png)](https://streamable.com/xrhlvq)
 
 Custom error page after 3 failed logins.
 
-#### 2FA
+**2FA**
 
 [![2FA](https://i.imgur.com/eQ7wVGo.png)](https://streamable.com/antb1q)
 
 Built with Twilio.
 
-#### Payment
+**Payment**
 
 [![payment](https://i.imgur.com/M4VpAPl.png)](https://streamable.com/tzq63z)
 
 Built with Stripe.
 
-#### Admin Logging
+**Admin Logging**
 
 [![admin](https://i.imgur.com/nxg8hgN.png)](https://streamable.com/3kc075)
 
 Detecting attempted SQL injections, and highlighting them in red.
-
-### Built With
-
-- Flask
-- Wamp64
-- Twilio
-- Stripe
 
 ## Getting Started
 
@@ -49,13 +53,13 @@ Detecting attempted SQL injections, and highlighting them in red.
 
 - OpenSSL
 
-### Configuration
+### Installation
 
-#### SSL
+**SSL**
 
 - The PEM password for running Shop4Free is `rnndmm`.
 
-#### reCaptcha
+**reCaptcha**
 
 1. Sign up @ [reCaptcha](https://www.google.com/recaptcha/).
 2. Select `v2 Tickbox` as the reCaptcha type.
@@ -64,7 +68,7 @@ Detecting attempted SQL injections, and highlighting them in red.
 5. Copy the private & public keys into `RECAPTCHA_PRIVATE_KEY` & `RECAPTCHA_PUBLIC_KEY` respectively.
 6. Run the application.
 
-#### Stripe
+**Stripe**
 
 Stripe is a 3rd-party payment processor & payment gateway. Stripe composes of an API & CLI.
 
@@ -79,7 +83,15 @@ Steps to Generate Endpoint Secret in Stripe:
 2. Login into Stripe if necessary.
 3. Paste endpoint secret into Stripe webhook function in `app.py`.
 
-## Credits
+### Execution
+
+    py app.py
+
+## License <!-- omit in toc -->
+
+This project is licensed under the terms of the MIT license.
+
+## Credits <!-- omit in toc -->
 
 - Joseph
 - Aden
